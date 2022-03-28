@@ -1,0 +1,24 @@
+
+@mixin setBtnStyle($color1, $color2) {
+    border: 1px solid $color1;
+    background: $color2;
+    color: $color1;
+    font-weight: 500;
+    font-size: 13px;
+    border-radius: 1rem;
+    padding: 0.25rem 1.5rem;
+  }
+
+  .primary_btn {
+    outline: none;
+    @include setBtnStyle(#b23db6, #fff);
+  }
+
+  .primary_btn:hover{
+    @include setBtnStyle(#fff, #b23db6);
+  }
+  .align-center {
+      display: flex;
+      align-items: center;
+      place-content: center;
+  }

@@ -1,0 +1,17 @@
+
+@import '../app.component.scss';
+.user-validate-class {
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    align-items: center;
+}
+.w-90 {
+    width: 90%;
+}
+.label-class {
+    color: #b23db6;
+}
+::ng-deep .mat-focus-indicator {
+    color: #b23db6;
+}
