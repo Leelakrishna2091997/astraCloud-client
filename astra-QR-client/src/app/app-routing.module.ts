@@ -12,7 +12,7 @@ import { SummaryComponent } from './sumary/summary.component';
 const routes: Routes = [
   { path: '', component: UserValidateComponent },
   // { path: 'userHome', component: UserHomeComponent, canActivate: [AuthenticateGuard] },
-  { path: 'home', component: HomeComponent },
+  { path: 'home', component: HomeComponent},
   { path: 'deposit', component: DepositComponent },
   { path: 'denomination', component: DenominationComponent },
   { path: 'summary', component: SummaryComponent }

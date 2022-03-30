@@ -4,9 +4,10 @@
     <mat-icon class="displayIcon" [routerLink]="['/home']" (click)="drawer.toggle()" >home</mat-icon> Home
     <mat-divider></mat-divider>
     <p class="navList" [routerLink]="['/deposit']" (click)="drawer.toggle()">Depositech</p>
+    <p class="navList" [routerLink]="['/']" (click)="drawer.toggle()">Login</p>
   </mat-drawer>
   <mat-drawer-content>
-    <div class="headerPane" *ngIf="router.url == '/home'">
+    <div class="headerPane" *ngIf="router.url == '/home' || router.url == '/'">
       <mat-icon class="menuIcon" (click)="drawer.toggle()">list</mat-icon> 
       <span class="appTitle">HOME</span>
       <mat-divider></mat-divider>
