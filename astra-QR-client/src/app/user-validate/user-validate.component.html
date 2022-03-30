@@ -1,24 +1,24 @@
-<div [formGroup]="userForm" class="user-validate-class w-100">
+<div [formGroup]="data.userForm" class="user-validate-class w-100">
     <mat-form-field class="w-90" appearance="fill">
         <mat-label class="label-class">Customer ID</mat-label>
         <input class="w-100" formControlName="customerId" matInput placeholder="Eg: 12345678">
-        <mat-error *ngIf="userForm.get('customerId').hasError('required')">
-            CustomerID is <strong>required</strong>
+        <mat-error *ngIf="data.userForm.get('customerId').hasError('required')">
+            CustomerID is required
         </mat-error>
     </mat-form-field>
     <mat-form-field class="w-90" appearance="fill">
         <mat-label class="label-class">First Name</mat-label>
         <input class="w-100" formControlName="firstName" matInput placeholder="Eg: Alice">
-        <mat-error *ngIf="userForm.get('customerId').hasError('required')">
-            First Name is <strong>required</strong>
+        <mat-error *ngIf="data.userForm.get('customerId').hasError('required')">
+            First Name is required
         </mat-error>
 
     </mat-form-field>
     <mat-form-field class="w-90" appearance="fill">
         <mat-label>Mobile Number</mat-label>
         <input type="number" class="w-100" formControlName="mobileNumber" matInput placeholder="Eg: 9876543210">
-        <mat-error *ngIf="userForm.get('mobileNumber').hasError('required')">
-            Mobile Number is <strong>required</strong>
+        <mat-error *ngIf="data.userForm.get('mobileNumber').hasError('required')">
+            Mobile Number is required
         </mat-error>
 
     </mat-form-field>
@@ -27,8 +27,8 @@
         <input class="w-100" formControlName="dob" matInput [matDatepicker]="picker">
         <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
         <mat-datepicker #picker></mat-datepicker>
-        <mat-error *ngIf="userForm.get('dob').hasError('required')">
-            Date of birth is <strong>required</strong>
+        <mat-error *ngIf="data.userForm.get('dob').hasError('required')">
+            Date of birth is required
         </mat-error>
     </mat-form-field>
     <div>

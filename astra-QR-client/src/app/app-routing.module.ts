@@ -12,10 +12,10 @@ import { SummaryComponent } from './sumary/summary.component';
 const routes: Routes = [
   { path: '', component: UserValidateComponent },
   // { path: 'userHome', component: UserHomeComponent, canActivate: [AuthenticateGuard] },
-  { path: 'home', component: HomeComponent},
-  { path: 'deposit', component: DepositComponent },
-  { path: 'denomination', component: DenominationComponent },
-  { path: 'summary', component: SummaryComponent }
+  { path: 'home', component: HomeComponent, canActivate: [AuthenticateGuard]},
+  { path: 'deposit', component: DepositComponent, canActivate: [AuthenticateGuard] },
+  { path: 'denomination', component: DenominationComponent, canActivate: [AuthenticateGuard] },
+  { path: 'summary', component: SummaryComponent, canActivate: [AuthenticateGuard] }
  ];
 
 @NgModule({

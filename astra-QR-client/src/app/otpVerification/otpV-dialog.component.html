@@ -1,0 +1,9 @@
+<h1 mat-dialog-title align="center"> Verification </h1>
+<div class="main" mat-dialog-content>For enhanced security validate yourself with the code sent on your registered mobile no.</div>
+<mat-form-field appearance="outline" style="margin-top: 1rem; width:100%">
+  <input matInput [formControl]="code">
+</mat-form-field>
+<div mat-dialog-actions align="center">
+    <button class="primaryButton verifyButton"  mat-button (click)="onVerifyCode()" >Verify Code</button>
+</div>
+<div style="color:#4d1daf; margin-top: 1rem;" align="center" (click)="onResend()">Resend Code</div>

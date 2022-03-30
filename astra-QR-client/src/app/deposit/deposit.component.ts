@@ -2,7 +2,7 @@ import { Component,Inject, Input, OnInit } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms';
 import { Router } from '@angular/router';
-import { DataService } from '../services/data.service';
+import { DataService } from '../core/services/data.service';
 
 @Component({
   selector: 'deposit',
@@ -11,14 +11,15 @@ import { DataService } from '../services/data.service';
 })
 export class DepositComponent implements OnInit {
   highlight: any;
-  highlightCopy: any
+  highlightCopy: any;
+  username = '';
   constructor(
     private router: Router,
     public data: DataService
     ) { }
 
   ngOnInit(): void {
-   
+    this.username = this.data.userForm.value.firstName;
   }
 
   onLinkClick(event: any){

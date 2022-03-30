@@ -1,7 +1,8 @@
 import { Component,Inject, Input, OnInit } from '@angular/core';
-import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { MatDialog, MatDialogConfig, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms';
-import { DataService } from '../services/data.service';
+import { DataService } from '../core/services/data.service';
+import { OtpVDialogComponent } from '../otpVerification/otpV-dialog.component';
 
 @Component({
   selector: 'summary',
@@ -15,7 +16,8 @@ export class SummaryComponent implements OnInit {
   date : any;
 
   constructor(
-    public data: DataService
+    public data: DataService,
+    private dialog: MatDialog
     ) { }
 
   ngOnInit(): void {
@@ -36,6 +38,17 @@ export class SummaryComponent implements OnInit {
 
   onGenerateQR(){
     //open OTP verification dialog
+    const dialogConfig = new MatDialogConfig();
+    dialogConfig.closeOnNavigation = false;
+    dialogConfig.disableClose = true;
+    dialogConfig.hasBackdrop = true;
+    dialogConfig.autoFocus = false;
+    dialogConfig.width = 'max-content';
+    dialogConfig.data = this.data.userForm.value.mobileNumber;
+    const dialogRef = this.dialog.open(OtpVDialogComponent, dialogConfig);
+    dialogRef.afterClosed().subscribe(() => {
+      //go To QR Screen
+    });
   }
   
 

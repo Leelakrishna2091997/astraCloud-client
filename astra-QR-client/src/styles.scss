@@ -27,6 +27,16 @@ body { background-color: #f0f0f2; }
     border-top-width: 0.5px;
     padding-top: 5px;
 }
+.snackBar{
+  font-size: 10px;
+  color: rgb(73, 73, 75);
+  background-color: #e9cfcf;
+}
+// ::ng-deep .mat-snack-bar-handset .mat-snack-bar-container {
+//   background-color: #310760;}
+// ::ng-deep .mat-button-wrapper{
+//   color: white;
+// }
 // .primaryButton:hover{
 //     background-color: #4d1daf;
 //     color:white;

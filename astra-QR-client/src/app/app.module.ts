@@ -28,18 +28,22 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 import {MatCardModule} from '@angular/material/card';
 import { DepositComponent } from './deposit/deposit.component';
 import { MatNativeDateModule } from '@angular/material/core';
 import { DenominationComponent } from './denomination/denomination.component';
 import { SummaryComponent } from './sumary/summary.component';
+import { OtpVDialogComponent } from './otpVerification/otpV-dialog.component';
+import { MatDialogModule } from '@angular/material/dialog';
 @NgModule({
   declarations: [
     AppComponent,
     DepositComponent,
     DenominationComponent,
     SummaryComponent,
-    UserValidateComponent
+    UserValidateComponent,
+    OtpVDialogComponent
   ],
   imports: [
     CommonModule,
@@ -71,7 +75,9 @@ import { SummaryComponent } from './sumary/summary.component';
     MatCardModule,
     MatNativeDateModule,
     NgxQRCodeModule,
-    MatSliderModule
+    MatSliderModule,
+    MatDialogModule,
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
