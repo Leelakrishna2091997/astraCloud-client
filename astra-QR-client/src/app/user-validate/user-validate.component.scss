@@ -9,9 +9,8 @@
 .w-90 {
     width: 90%;
 }
-.label-class {
-    color: #b23db6;
-}
-::ng-deep .mat-focus-indicator {
-    color: #b23db6;
-}
+
+
+::ng-deep .mat-form-field-appearance-fill .mat-form-field-flex{ 
+    background-color: #e6e0f7 !important;
+  }

@@ -1,0 +1,42 @@
+<div class="form-field mb-5" style="margin:auto; padding-top: 1rem; width: fit-content; font-size: 16px;">
+    Deposit Cash into
+</div>
+<section class="tab mt-9">
+
+	<div  class="linksCtrl">
+        <ul  class='nav nav-pills entitylinks'>
+            <li href='javascript:void(0)' class="linkslia linksli pointerCursor"  
+                style="border-right: 2px solid #533bb4; border-top-left-radius: 500px; border-bottom-left-radius: 500px;"(click)="onLinkClick($event); setAccountOption('own');">Own Account  
+            </li>
+            <li href='javascript:void(0)' class="linkslia linksli pointerCursor"  
+                style="border-top-right-radius: 500px; border-bottom-right-radius: 500px;" (click)="onLinkClick($event); setAccountOption('other');">Other's Account  
+            </li>
+        </ul>
+        <div class="clearer"></div>  
+    </div>
+
+</section>
+
+<div class="main-form" [formGroup]="data.depositForm.accountDetails">
+    <div class="form-field mb-5" style="margin:auto;">
+        <mat-form-field class="w-100" appearance="fill">
+            <mat-label>Account Number</mat-label>
+            <mat-select formControlName="Account Number">
+              <mat-option value="8450924851">
+                248t56238573
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+    </div>
+    <div class="form-field w-70" style="margin:auto;">
+        <mat-form-field class="w-100" appearance="fill">
+            <mat-label>Select a date</mat-label>
+            <input matInput [matDatepicker]="picker" formControlName="Date">
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+    </div>
+</div>
+<div class="action" style="margin:auto;">
+    <button class="primaryButton" type="button" [routerLink]="['/denomination']">Next</button>
+</div>

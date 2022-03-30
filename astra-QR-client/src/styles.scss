@@ -1,7 +1,34 @@
 /* You can add global styles to this file, and also import other style files */
-@import "~@angular/material/prebuilt-themes/indigo-pink.css";
-@import "~bootstrap/dist/css/bootstrap.css";
-@import "~@ffdc/uxg-angular-theme/_all-theme";
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+* { 
+    font-size: 20px;
+    font-family: "Calibri";
+    font-weight: 500;
+    //background-color: #f0f0f2;
+  }
+  
+body { background-color: #f0f0f2; }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+::ng-deep .mat-form-field-appearance-fill { 
+    background-color: rgb(217, 210, 235)!important;
+  }
+.primaryButton {
+    cursor: pointer;
+    border-radius:25px;
+    outline: none;
+    background-color: #4d1daf;
+    color:white;
+    border:none;
+    border: 0.5px solid #4d1daf;
+    padding-top: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+    border-top-width: 0.5px;
+    padding-top: 5px;
+}
+// .primaryButton:hover{
+//     background-color: #4d1daf;
+//     color:white;
+// }
+  

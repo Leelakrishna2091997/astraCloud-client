@@ -1,0 +1,15 @@
+<div class="form-field mb-5" style="margin:auto; padding-top: 1rem; width: fit-content; font-size: 16px;">
+    Enter the number of notes to deposit:
+</div>
+
+<div class="main-form" [formGroup]="data.depositForm.denominationDetails">
+    <div *ngFor="let cur of denominationOp" class="form-field mb-5" style="margin:auto;">
+        <mat-form-field appearance="outline">
+            <mat-label>{{cur}} x </mat-label>
+            <input matInput placeholder="no. of {{cur}} notes" formControlName="{{cur}}">
+          </mat-form-field>
+    </div>
+</div>
+<div class="action" style="margin:auto;">
+    <button class="primaryButton" type="button" [routerLink]="['/summary']">Next</button>
+</div>

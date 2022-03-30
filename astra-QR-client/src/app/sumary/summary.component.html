@@ -1,0 +1,19 @@
+<div class="main-form">
+    <mat-card class="card">
+        <mat-card-title>SUMMARY</mat-card-title>
+        <mat-card-subtitle>Amount of ({{cur}}) : <b>{{totalAmount| number:'1.2-2'}}</b></mat-card-subtitle>
+        <mat-card-content>
+          <p>As per denomination : </p>
+          <mat-card>
+          <mat-list role="list" *ngFor="let item of data.depositForm.denominationDetails.value | keyvalue">
+            <mat-list-item role="listitem" *ngIf="item.value != ''">{{item.key}} x {{item.value}}</mat-list-item>
+          </mat-list>
+        </mat-card>
+          <p>To be deposited to account number: {{accountNumber}}</p>
+          <p>Deposit Date : {{date | date : 'dd-MMM-y'}}</p>
+        </mat-card-content>
+    </mat-card>
+</div>
+<div class="action" style="margin:auto;">
+    <button class="primaryButton" type="button" (click)="onGenerateQR()">Generate QR</button>
+</div>

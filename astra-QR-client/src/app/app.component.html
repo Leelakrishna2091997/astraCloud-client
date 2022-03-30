@@ -1,6 +1,24 @@
-<div class="align-center">
-
-  <ngx-qrcode [elementType]="elementType" [value]="value" cssClass="aclass" errorCorrectionLevel="L">
-  </ngx-qrcode>
-</div>
-<router-outlet></router-outlet>
+<mat-drawer-container class="main-container" hasBackdrop="true">
+  <mat-drawer #drawer mode="over" class="sidenavv">
+    <mat-icon (click)="drawer.toggle()">arrow_back</mat-icon><br>
+    <mat-icon class="displayIcon" [routerLink]="['/home']" (click)="drawer.toggle()" >home</mat-icon> Home
+    <mat-divider></mat-divider>
+    <p class="navList" [routerLink]="['/deposit']" (click)="drawer.toggle()">Depositech</p>
+  </mat-drawer>
+  <mat-drawer-content>
+    <div class="headerPane" *ngIf="router.url == '/home'">
+      <mat-icon class="menuIcon" (click)="drawer.toggle()">list</mat-icon> 
+      <span class="appTitle">HOME</span>
+      <mat-divider></mat-divider>
+    </div>
+    <div class="headerPane" *ngIf="router.url != '/home' && router.url != '/'">
+      <mat-icon class="backIcon" (click)="goBack()">arrow_back</mat-icon> 
+      <span class="appTitle">DEPOSITECH</span>
+      <mat-divider></mat-divider>
+    </div>
+    <router-outlet></router-outlet>
+    <div class="headerPane" style="width:60%; margin:auto; margin-top: 5px;" *ngIf="router.url == '/home'">
+      <button class="primaryButton" type="button" (click)="drawer.toggle()">Menu</button>
+    </div>
+  </mat-drawer-content>
+</mat-drawer-container>

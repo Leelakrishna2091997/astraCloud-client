@@ -15,7 +15,7 @@
 
     </mat-form-field>
     <mat-form-field class="w-90" appearance="fill">
-        <mat-label class="label-class">Mobile Number</mat-label>
+        <mat-label>Mobile Number</mat-label>
         <input type="number" class="w-100" formControlName="mobileNumber" matInput placeholder="Eg: 9876543210">
         <mat-error *ngIf="userForm.get('mobileNumber').hasError('required')">
             Mobile Number is <strong>required</strong>
@@ -23,7 +23,7 @@
 
     </mat-form-field>
     <mat-form-field class="w-90" appearance="fill">
-        <mat-label class="label-class">Date Of Birth</mat-label>
+        <mat-label>Date Of Birth</mat-label>
         <input class="w-100" formControlName="dob" matInput [matDatepicker]="picker">
         <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
         <mat-datepicker #picker></mat-datepicker>
@@ -32,6 +32,6 @@
         </mat-error>
     </mat-form-field>
     <div>
-        <button class="primary_btn" (click)="validateUser()">validate user</button>
+        <button class="primaryButton" (click)="validateUser()">validate user</button>
     </div>
 </div>

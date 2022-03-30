@@ -1,0 +1,67 @@
+.tab{
+    margin:auto;
+}
+.w-100{
+    width:100%;
+}
+.linksCtrl{
+    border: 2px solid #533bb4;
+    border-radius: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width:fit-content;
+}
+.linksli {
+    float:left;
+    padding: 7px;
+  }
+  .linkslia{
+    margin-left: 0px;
+    margin-top: 0px;
+    background-color: white;
+    // border: 2px solid #533bb4;
+    // border-radius: 500px;
+  }
+  /* .linkshr {
+    border:0.25px solid #ddd;
+  } */
+  .highlight{
+    background-color:rgb(207, 208, 250);
+  }
+.entitylinks{
+  background-color: white;
+  color: #533bb4;
+  margin-top: 0ch;
+  padding-left: 0px;
+}
+  .pointerCursor{
+    cursor: pointer;
+}
+ul {
+    list-style-type: none;
+  }
+  .clearer {
+    height:0;
+    clear:both;
+   }
+.main-form{
+    width:100%;
+    display:flex;
+    margin-top: 1rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.form-field{
+    width:75%;
+}
+::ng-deep .mat-form-field-appearance-fill .mat-form-field-flex{ 
+    background-color: #e6e0f7 !important;
+  }
+
+  .action{
+    right: 10%;
+    bottom: 6%;
+    position: absolute;
+  }

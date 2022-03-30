@@ -1,24 +1,62 @@
-
-@mixin setBtnStyle($color1, $color2) {
-    border: 1px solid $color1;
-    background: $color2;
-    color: $color1;
-    font-weight: 500;
-    font-size: 13px;
-    border-radius: 1rem;
-    padding: 0.25rem 1.5rem;
+.main-container {
+    width: 100vw;
+    height: 100vh;
+    //border: 1px solid rgba(0, 0, 0, 0.5);
   }
+::ng-deep .mat-drawer-inner-container{
+    background-color: white !important;
+}
+  
+  .sidenav-content {
+    height: 100%;
+    // align-items: center;
+    // justify-content: center;
+  }
+  
+  .sidenavv {
+    padding: 20px;
+    border-right: 1px solid rgba(0, 0, 0, 0.5);
+    background-color: white;
+   }
 
-  .primary_btn {
+  .displayIcon{
+    font-size: 1.1rem;
+    color: #533bb4;
+    vertical-align: text-top;
+    background-color: white;
     outline: none;
-    @include setBtnStyle(#b23db6, #fff);
+  } 
+  
+  .menuIcon{
+    font-size: 2rem;
+    float: left;
   }
 
-  .primary_btn:hover{
-    @include setBtnStyle(#fff, #b23db6);
+  .backIcon{
+    font-size: 1.5rem;
+    margin-top: 4px;
+    float: left;
   }
-  .align-center {
-      display: flex;
-      align-items: center;
-      place-content: center;
+
+  .headerPane{
+    background-color: #4d1daf;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    .appTitle{
+        font-size: 1.5rem;
+    }
   }
+
+  .navList{
+      cursor: pointer;
+  }
+  p{
+      background-color: white;
+  }
+
+  ::ng-deep .mat-drawer-container {
+      background-color: unset;
+  }
+
+  
