@@ -1,6 +1,6 @@
 import { Component, Inject, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
-import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 
 @Component({
   selector: 'otpV-dialog',
@@ -9,8 +9,9 @@ import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 })
 export class OtpVDialogComponent implements OnInit {
   code = new FormControl('');
-  constructor( @Inject(MAT_DIALOG_DATA) private data: any,
-  private dialogRef: MatDialogRef<OtpVDialogComponent>) { }
+  constructor(@Inject(MAT_DIALOG_DATA) private data: any,
+    private dialogClass: MatDialog,
+    private dialogRef: MatDialogRef<OtpVDialogComponent>) { }
 
   ngOnInit(): void {
   }
@@ -21,7 +22,8 @@ export class OtpVDialogComponent implements OnInit {
     this.dialogRef.close();
   }
 
-  onResend(){
+
+  onResend() {
 
   }
 

@@ -1,8 +1,9 @@
-import { Component,Inject, Input, OnInit } from '@angular/core';
+import { Component, Inject, Input, OnInit } from '@angular/core';
 import { MatDialog, MatDialogConfig, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms';
 import { DataService } from '../core/services/data.service';
 import { OtpVDialogComponent } from '../otpVerification/otpV-dialog.component';
+import { QrDialogComponent } from '../qr-dialog/qr-dialog.component';
 
 @Component({
   selector: 'summary',
@@ -10,15 +11,15 @@ import { OtpVDialogComponent } from '../otpVerification/otpV-dialog.component';
   styleUrls: ['./summary.component.scss']
 })
 export class SummaryComponent implements OnInit {
-  cur='INR';
+  cur = 'INR';
   totalAmount = 0;
   accountNumber = 9837451124;
-  date : any;
+  date: any;
 
   constructor(
     public data: DataService,
     private dialog: MatDialog
-    ) { }
+  ) { }
 
   ngOnInit(): void {
     this.date = this.data.depositForm.accountDetails.value['Date'];
@@ -26,17 +27,18 @@ export class SummaryComponent implements OnInit {
     console.log(this.data);
   }
 
-  calTotalAmount(){
+  calTotalAmount() {
     Object.entries(this.data.depositForm.denominationDetails.value).forEach(
       ([key, value]: any) => {
-        if(value!==''){
-        this.totalAmount += (parseInt(key) * parseInt(value));
+        if (value !== '') {
+          this.totalAmount += (parseInt(key) * parseInt(value));
         }
       }
     );
+    this.data.totalAmtVal = this.totalAmount;
   }
 
-  onGenerateQR(){
+  onGenerateQR() {
     //open OTP verification dialog
     const dialogConfig = new MatDialogConfig();
     dialogConfig.closeOnNavigation = false;
@@ -48,8 +50,23 @@ export class SummaryComponent implements OnInit {
     const dialogRef = this.dialog.open(OtpVDialogComponent, dialogConfig);
     dialogRef.afterClosed().subscribe(() => {
       //go To QR Screen
+      this.openQRDialog();
     });
   }
-  
+  openQRDialog() {
+    //open OTP verification dialog
+    const dialogConfig = new MatDialogConfig();
+    dialogConfig.closeOnNavigation = false;
+    dialogConfig.disableClose = true;
+    dialogConfig.hasBackdrop = true;
+    dialogConfig.autoFocus = false;
+    dialogConfig.width = 'max-content';
+    dialogConfig.data = this.data.userForm.value.mobileNumber;
+    const dialogRef = this.dialog.open(QrDialogComponent, dialogConfig);
+    dialogRef.afterClosed().subscribe(() => {
+      //go To QR Screen
+    });
+  }
+
 
 }

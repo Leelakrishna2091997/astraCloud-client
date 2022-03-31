@@ -1,0 +1,27 @@
+<h1 class="border-box" mat-dialog-title align="center"> Depositech </h1>
+<div class="border-box flex-center">
+    <div class="main " mat-dialog-content>
+        <span class="abs-text">
+            Your QR info is here
+        </span>
+        <div>
+
+            <ngx-qrcode [elementType]="elementType" [value]="value" cssClass="aclass" errorCorrectionLevel="L">
+            </ngx-qrcode>
+        </div>
+    </div>
+
+</div>
+<div style="width: 100%;
+margin: 1rem 0rem;" align="center">
+    <button class="primaryButton verifyButton" mat-button (click)="download()">Download</button>
+</div>
+<div class="border-box small flex-column">
+    <div class="mb-3">
+        <strong class="strong">Note:</strong> Produce this QR code along with the amount at the bank to further process
+        the Deposit.
+    </div>
+    <div>
+        QR code generated is unique and will expire in one usage.
+    </div>
+</div>

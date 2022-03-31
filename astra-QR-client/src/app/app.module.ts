@@ -36,6 +36,7 @@ import { DenominationComponent } from './denomination/denomination.component';
 import { SummaryComponent } from './sumary/summary.component';
 import { OtpVDialogComponent } from './otpVerification/otpV-dialog.component';
 import { MatDialogModule } from '@angular/material/dialog';
+import { QrDialogComponent } from './qr-dialog/qr-dialog.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -43,7 +44,8 @@ import { MatDialogModule } from '@angular/material/dialog';
     DenominationComponent,
     SummaryComponent,
     UserValidateComponent,
-    OtpVDialogComponent
+    OtpVDialogComponent,
+    QrDialogComponent
   ],
   imports: [
     CommonModule,

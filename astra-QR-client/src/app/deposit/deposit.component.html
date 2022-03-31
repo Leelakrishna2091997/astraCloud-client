@@ -4,16 +4,18 @@
 </div>
 <section class="tab mt-9">
 
-	<div  class="linksCtrl">
-        <ul  class='nav nav-pills entitylinks'>
-            <li href='javascript:void(0)' class="linkslia linksli pointerCursor"  
-                style="border-right: 2px solid #533bb4; border-top-left-radius: 500px; border-bottom-left-radius: 500px;"(click)="onLinkClick($event); setAccountOption('own');">Own Account  
+    <div class="linksCtrl">
+        <ul class='nav nav-pills entitylinks'>
+            <li href='javascript:void(0)' class="linkslia linksli pointerCursor"
+                style="border-right: 2px solid #533bb4; border-top-left-radius: 500px; border-bottom-left-radius: 500px;"
+                (click)="onLinkClick($event); setAccountOption('own');">Own Account
             </li>
-            <li href='javascript:void(0)' class="linkslia linksli pointerCursor"  
-                style="border-top-right-radius: 500px; border-bottom-right-radius: 500px;" (click)="onLinkClick($event); setAccountOption('other');">Other's Account  
+            <li href='javascript:void(0)' class="linkslia linksli pointerCursor"
+                style="border-top-right-radius: 500px; border-bottom-right-radius: 500px;"
+                (click)="onLinkClick($event); setAccountOption('other');">Other's Account
             </li>
         </ul>
-        <div class="clearer"></div>  
+        <div class="clearer"></div>
     </div>
 
 </section>
@@ -23,11 +25,14 @@
         <mat-form-field class="w-100" appearance="fill">
             <mat-label>Account Number</mat-label>
             <mat-select formControlName="Account Number">
-              <mat-option value="8450924851">
+                <!-- <mat-option value="8450924851">
                 248t56238573
-              </mat-option>
+              </mat-option> -->
+                <mat-option [value]="eachAcct.accountId" *ngFor="let eachAcct of accounts">
+                    {{eachAcct.accountName}} - {{eachAcct.accountId}}
+                </mat-option>
             </mat-select>
-          </mat-form-field>
+        </mat-form-field>
     </div>
     <div class="form-field w-70" style="margin:auto;">
         <mat-form-field class="w-100" appearance="fill">

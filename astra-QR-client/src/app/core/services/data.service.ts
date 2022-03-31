@@ -22,6 +22,7 @@ export class DataService {
     denominationDetails: this.formBuilder.group({
     })
   }
+  public totalAmtVal = 0;
   constructor(public formBuilder: FormBuilder) { }
-  
+
 }
