@@ -3,12 +3,13 @@
     <mat-icon (click)="drawer.toggle()">arrow_back</mat-icon><br>
     <mat-icon class="displayIcon" [routerLink]="['/home']" (click)="drawer.toggle()">home</mat-icon> Home
     <mat-divider></mat-divider>
-    <p class="navList" [routerLink]="['/deposit']" (click)="drawer.toggle()">Deposit Cash</p>
+    <p class="navList" [routerLink]="['/deposit']" (click)="drawer.toggle()">Deposit Money</p>
     <div>
-      <p class="navList" [routerLink]="['/']" (click)="drawer.toggle()">
+      <p *ngIf="!this.authService.isUserValidated()" class="navList" [routerLink]="['/']" (click)="drawer.toggle()">
         Login
       </p>
-      <p class="navList" [routerLink]="['/']" (click)="drawer.toggle(); logoutUser()">
+      <p *ngIf="this.authService.isUserValidated()" class="navList" [routerLink]="['/']"
+        (click)="drawer.toggle(); logoutUser()">
         Logout
       </p>
     </div>
@@ -16,12 +17,12 @@
   <mat-drawer-content>
     <div class="headerPane" *ngIf="router.url == '/home' || router.url == '/'">
       <mat-icon class="menuIcon" (click)="drawer.toggle()">list</mat-icon>
-      <span class="appTitle">DEPOSITECH</span>
+      <span class="appTitle">ASTRACLOUD</span>
       <mat-divider></mat-divider>
     </div>
     <div class="headerPane" *ngIf="router.url != '/home' && router.url != '/'">
       <mat-icon class="backIcon" (click)="goBack()">arrow_back</mat-icon>
-      <span class="appTitle">DEPOSITECH</span>
+      <span class="appTitle">ASTRACLOUD</span>
       <mat-divider></mat-divider>
     </div>
     <router-outlet></router-outlet>

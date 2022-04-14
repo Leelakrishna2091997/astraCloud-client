@@ -13,6 +13,7 @@ export class DepositComponent implements OnInit {
   highlight: any;
   highlightCopy: any;
   username = '';
+  currentDate = new Date();
   accounts = [
 
     {

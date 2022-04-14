@@ -30,6 +30,10 @@
 .abs-text {
 
 }
+
+.close-icon {
+  position: absolute;
+}
 .main{
     position: relative;
   font-size: 14px;
@@ -41,7 +45,7 @@
     max-width: 10rem;
 }
 .verifyButton{
-  background-color: #b9b7bd;
+  // background-color: #b9b7bd;
   color:rgb(71, 70, 70);
 }
 ::ng-deep mat-form-field.mat-form-field-appearance-outline .mat-form-field-wrapper {
@@ -53,4 +57,10 @@
 }
 .border-box {
     border: 1px solid grey;
+}
+.small-font {
+  font-size: 16px;
+}
+.padding-small {
+  padding: 0.5rem;
 }

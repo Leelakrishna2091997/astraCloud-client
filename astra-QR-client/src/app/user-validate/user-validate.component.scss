@@ -13,8 +13,11 @@
 .mat-error{
     font-size: 12px;
 }
+.width {
+    width: 6rem;
+}
 
 
-::ng-deep .mat-form-field-appearance-fill .mat-form-field-flex{ 
+::ng-deep .mat-form-field-appearance-fill .mat-form-field-flex{
     background-color: #e6e0f7 !important;
   }

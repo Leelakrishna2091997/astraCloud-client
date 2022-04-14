@@ -5,7 +5,7 @@
   }
   hr{
     padding: 0px;
-    margin: 0px;    
+    margin: 0px;
   }
   .fa{
       color: rgb(178, 61, 182);;
@@ -23,4 +23,13 @@
 }
 ::ng-deep mat-form-field.mat-form-field-appearance-outline .mat-form-field-wrapper {
   padding-bottom: 0px;
+}
+.relative {
+  position: relative;
+}
+.flex {
+  display: flex
+}
+.close-icon {
+  position: absolute;
 }

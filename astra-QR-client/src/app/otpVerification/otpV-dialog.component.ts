@@ -21,7 +21,10 @@ export class OtpVDialogComponent implements OnInit {
     console.log(this.code.value);
     this.dialogRef.close();
   }
+  closeDialog() {
+    this.dialogRef.close();
 
+  }
 
   onResend() {
 

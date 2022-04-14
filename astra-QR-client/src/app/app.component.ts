@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Location } from '@angular/common';
+import { AuthService } from './core/services/auth.service';
 
 @Component({
   selector: 'app-root',
@@ -13,11 +14,13 @@ export class AppComponent implements OnInit {
   value = 'Techiediaries';
   constructor(
     public router: Router,
-    private location: Location
+    private location: Location,
+    public authService: AuthService
   ) { }
-
+  isUserLoggedIn = false;
   ngOnInit(): void {
     console.log(this.router.url);
+
   }
   goBack() {
     this.location.back();

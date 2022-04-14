@@ -37,7 +37,7 @@
     <div class="form-field w-70" style="margin:auto;">
         <mat-form-field class="w-100" appearance="fill">
             <mat-label>Select a date</mat-label>
-            <input matInput [matDatepicker]="picker" formControlName="Date">
+            <input matInput [matDatepicker]="picker" [min]="currentDate" formControlName="Date">
             <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
             <mat-datepicker #picker></mat-datepicker>
         </mat-form-field>
