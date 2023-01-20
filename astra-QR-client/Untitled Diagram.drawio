@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-01-20T22:09:32.610Z" agent="5.0 (Macintosh)" etag="Z5ISmgZjW57tMbst2-kv" version="20.8.5" type="github">
+<mxfile host="app.diagrams.net" modified="2023-01-20T22:24:47.542Z" agent="5.0 (Macintosh)" etag="2KvYduE9OVMJG_Dvr9WA" version="20.8.5" type="github">
   <diagram id="WIKZO_O39W_F3QcdNPoz" name="Page-1">
-    <mxGraphModel dx="1910" dy="1813" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2970" dy="2527" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -126,10 +126,40 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="orbKIHzd0-_m-krfdX9Z-19" value="&lt;&lt;enumeration&gt;&gt;&#xa;trailTypeName&#xa;" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;rounded=1;fontSize=15;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
-          <mxGeometry x="510" y="680" width="220" height="220" as="geometry" />
+          <mxGeometry x="510" y="680" width="220" height="150" as="geometry" />
         </mxCell>
-        <mxCell id="orbKIHzd0-_m-krfdX9Z-20" value="name   - {PK}&#xa;elevation&#xa;length&#xa;timeToComplete&#xa;&#xa;&#xa;&#xa;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=15;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="orbKIHzd0-_m-krfdX9Z-19">
-          <mxGeometry y="60" width="220" height="160" as="geometry" />
+        <mxCell id="orbKIHzd0-_m-krfdX9Z-20" value="easiest&#xa;intermediate&#xa;advanced&#xa;expert&#xa;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=15;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="orbKIHzd0-_m-krfdX9Z-19">
+          <mxGeometry y="60" width="220" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="orbKIHzd0-_m-krfdX9Z-21" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="orbKIHzd0-_m-krfdX9Z-19" target="__Uh9FplEamvk5oUluky-40">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="620" y="670" as="sourcePoint" />
+            <mxPoint x="630" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="orbKIHzd0-_m-krfdX9Z-23" value="Easiest" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;rounded=1;fontSize=15;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
+          <mxGeometry x="760" y="630" width="220" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="orbKIHzd0-_m-krfdX9Z-24" value="representedAs = &quot;Green circle&quot;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=15;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="orbKIHzd0-_m-krfdX9Z-23">
+          <mxGeometry y="40" width="220" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="orbKIHzd0-_m-krfdX9Z-25" value="Intermediate" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;rounded=1;fontSize=15;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
+          <mxGeometry x="990" y="630" width="220" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="orbKIHzd0-_m-krfdX9Z-26" value="representedAs = &quot;Blue diamond&quot;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=15;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="orbKIHzd0-_m-krfdX9Z-25">
+          <mxGeometry y="40" width="220" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="orbKIHzd0-_m-krfdX9Z-27" value="Easiest" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;rounded=1;fontSize=15;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
+          <mxGeometry x="1220" y="630" width="240" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="orbKIHzd0-_m-krfdX9Z-28" value="representedAs = &quot;Black diamond&quot;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=15;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="orbKIHzd0-_m-krfdX9Z-27">
+          <mxGeometry y="40" width="240" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="orbKIHzd0-_m-krfdX9Z-29" value="Easiest" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;rounded=1;fontSize=15;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
+          <mxGeometry x="1470" y="630" width="220" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="orbKIHzd0-_m-krfdX9Z-30" value="representedAs = &quot;Double &#xa;black diamond&quot;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=15;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="orbKIHzd0-_m-krfdX9Z-29">
+          <mxGeometry y="40" width="220" height="110" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
