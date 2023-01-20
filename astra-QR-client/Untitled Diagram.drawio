@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-01-20T22:57:10.436Z" agent="5.0 (Macintosh)" etag="xUAOFyTuZzKIt2UCOGah" version="20.8.5" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2023-01-20T23:46:25.937Z" agent="5.0 (Macintosh)" etag="XSt1J2rLNv1LXs2JniOM" version="20.8.5" type="github" pages="2">
   <diagram id="WIKZO_O39W_F3QcdNPoz" name="Page-1">
     <mxGraphModel dx="2440" dy="2170" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -208,10 +208,52 @@
     </mxGraphModel>
   </diagram>
   <diagram id="onl90hW0yhVbBo7K8uGe" name="Page-2">
-    <mxGraphModel dx="1908" dy="1284" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="4666" dy="2568" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="vEhIdwuRfsxe-VQ4iNBu-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1.002;entryY=0.292;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="vEhIdwuRfsxe-VQ4iNBu-1" target="vEhIdwuRfsxe-VQ4iNBu-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vEhIdwuRfsxe-VQ4iNBu-1" value="Region" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=15;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
+          <mxGeometry x="-320" y="240" width="220" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="vEhIdwuRfsxe-VQ4iNBu-2" value="id                -         {PK}&#xa;name&#xa;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=15;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="vEhIdwuRfsxe-VQ4iNBu-1">
+          <mxGeometry y="30" width="220" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="vEhIdwuRfsxe-VQ4iNBu-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="vEhIdwuRfsxe-VQ4iNBu-4" target="vEhIdwuRfsxe-VQ4iNBu-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vEhIdwuRfsxe-VQ4iNBu-4" value="Sensors" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=15;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
+          <mxGeometry x="-680" y="430" width="220" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="vEhIdwuRfsxe-VQ4iNBu-5" value="tagId             - {PK}&#xa;sex&#xa;dateOfTagging&#xa;approximateAgeOfAnimal&#xa;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=15;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="vEhIdwuRfsxe-VQ4iNBu-4">
+          <mxGeometry y="30" width="220" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="vEhIdwuRfsxe-VQ4iNBu-12" value="Climate" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=15;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
+          <mxGeometry x="-670" y="240" width="220" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="vEhIdwuRfsxe-VQ4iNBu-13" value="climateId        -     {PK}&#xa;type&#xa;description&#xa;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=15;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="vEhIdwuRfsxe-VQ4iNBu-12">
+          <mxGeometry y="30" width="220" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="vEhIdwuRfsxe-VQ4iNBu-20" value="exhibits" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-410" y="260" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vEhIdwuRfsxe-VQ4iNBu-21" value="1..1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-450" y="260" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vEhIdwuRfsxe-VQ4iNBu-22" value="1..1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-360" y="260" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vEhIdwuRfsxe-VQ4iNBu-24" value="Tracks_Animals_In" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-485" y="385" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vEhIdwuRfsxe-VQ4iNBu-25" value="0..*" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-570" y="405" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vEhIdwuRfsxe-VQ4iNBu-26" value="1..1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-210" y="345" width="40" height="30" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
