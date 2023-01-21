@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-01-21T01:31:08.693Z" agent="5.0 (Macintosh)" etag="_q_cNkPAPRO2npIdRA8x" version="20.8.5" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2023-01-21T02:04:08.698Z" agent="5.0 (Macintosh)" etag="dYAzuW7d89IhHGCZhmLG" version="20.8.5" type="github" pages="3">
   <diagram id="0muBZeDZ4wnzqgPl6z7S" name="Page-3">
-    <mxGraphModel dx="2822" dy="1855" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="3168" dy="2088" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -68,7 +68,7 @@
         <mxCell id="P3esFlHFc6xtRCxM-Ww3-15" value="Staff" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=15;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
           <mxGeometry x="-200" y="90" width="180" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="P3esFlHFc6xtRCxM-Ww3-16" value="empNo        -     {PK}&#xa;jobDescription    &#xa;&#xa;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=15;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="P3esFlHFc6xtRCxM-Ww3-15">
+        <mxCell id="P3esFlHFc6xtRCxM-Ww3-16" value="empNo        -     {PK}&#xa;jobDescription    &#xa;name&#xa;jobRoles&#xa;&#xa;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=15;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="P3esFlHFc6xtRCxM-Ww3-15">
           <mxGeometry y="30" width="180" height="100" as="geometry" />
         </mxCell>
         <mxCell id="P3esFlHFc6xtRCxM-Ww3-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="P3esFlHFc6xtRCxM-Ww3-2" target="P3esFlHFc6xtRCxM-Ww3-4">
@@ -199,6 +199,9 @@
         </mxCell>
         <mxCell id="P3esFlHFc6xtRCxM-Ww3-62" value="constitute" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="-315" y="25" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="otCnNXMybzKOtUGZzyCI-1" value="Text" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-560" y="90" width="60" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
