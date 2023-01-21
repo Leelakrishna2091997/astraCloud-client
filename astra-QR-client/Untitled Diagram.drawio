@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-01-21T00:24:24.851Z" agent="5.0 (Macintosh)" etag="d1YVugGeO3GHCwPkl1br" version="20.8.5" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2023-01-21T00:31:58.693Z" agent="5.0 (Macintosh)" etag="LcRQUQl64KxVsq8tVLie" version="20.8.5" type="github" pages="3">
   <diagram id="WIKZO_O39W_F3QcdNPoz" name="Page-1">
     <mxGraphModel dx="2440" dy="2170" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -324,10 +324,71 @@
     </mxGraphModel>
   </diagram>
   <diagram id="0muBZeDZ4wnzqgPl6z7S" name="Page-3">
-    <mxGraphModel dx="954" dy="642" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1380" dy="357" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="P3esFlHFc6xtRCxM-Ww3-1" value="Clinic" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=15;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
+          <mxGeometry x="-520" y="90" width="220" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="P3esFlHFc6xtRCxM-Ww3-2" value="clinicNo        -     {PK}&#xa;clinicName    &#xa;Address&#xa;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=15;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="P3esFlHFc6xtRCxM-Ww3-1">
+          <mxGeometry y="30" width="220" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="P3esFlHFc6xtRCxM-Ww3-4" value="Vaccine" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=15;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
+          <mxGeometry x="-520" y="290" width="220" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="P3esFlHFc6xtRCxM-Ww3-5" value="serialNo        -     {PK}&#xa;noOfDoses&#xa;timeInterval&#xa;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=15;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="P3esFlHFc6xtRCxM-Ww3-4">
+          <mxGeometry y="30" width="220" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="P3esFlHFc6xtRCxM-Ww3-6" value="Pfizer" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=15;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
+          <mxGeometry x="-670" y="480" width="150" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="P3esFlHFc6xtRCxM-Ww3-8" value="Johnson &amp; Johnson" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=15;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
+          <mxGeometry x="-480" y="480" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="P3esFlHFc6xtRCxM-Ww3-9" value="Moderna" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=15;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
+          <mxGeometry x="-270" y="480" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="P3esFlHFc6xtRCxM-Ww3-10" value="" style="triangle;whiteSpace=wrap;html=1;rotation=-90;" vertex="1" parent="1">
+          <mxGeometry x="-427.5" y="417.5" width="25" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="P3esFlHFc6xtRCxM-Ww3-11" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=-0.035;entryY=0.67;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="P3esFlHFc6xtRCxM-Ww3-6" target="P3esFlHFc6xtRCxM-Ww3-10">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-460" y="410" as="sourcePoint" />
+            <mxPoint x="-410" y="450" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-595" y="470" />
+              <mxPoint x="-410" y="470" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="P3esFlHFc6xtRCxM-Ww3-12" value="" style="endArrow=none;html=1;rounded=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="P3esFlHFc6xtRCxM-Ww3-8">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-410" y="470" as="sourcePoint" />
+            <mxPoint x="-370" y="400" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-360" y="470" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="P3esFlHFc6xtRCxM-Ww3-13" value="" style="endArrow=none;html=1;rounded=0;entryX=0.438;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="P3esFlHFc6xtRCxM-Ww3-9">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-360" y="470" as="sourcePoint" />
+            <mxPoint x="-280" y="400" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-200" y="470" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="P3esFlHFc6xtRCxM-Ww3-14" value="{Mandatory, OR}" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-410" y="445" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="P3esFlHFc6xtRCxM-Ww3-15" value="Staff" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=15;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
+          <mxGeometry x="-230" y="90" width="180" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="P3esFlHFc6xtRCxM-Ww3-16" value="empNo        -     {PK}&#xa;jobDescription    &#xa;&#xa;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=15;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="P3esFlHFc6xtRCxM-Ww3-15">
+          <mxGeometry y="30" width="180" height="100" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
