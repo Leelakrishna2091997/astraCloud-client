@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-01-21T00:51:33.479Z" agent="5.0 (Macintosh)" etag="t7bV4PzMJbcqGw3aYDbZ" version="20.8.5" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2023-01-21T01:31:08.693Z" agent="5.0 (Macintosh)" etag="_q_cNkPAPRO2npIdRA8x" version="20.8.5" type="github" pages="3">
   <diagram id="0muBZeDZ4wnzqgPl6z7S" name="Page-3">
-    <mxGraphModel dx="3168" dy="2088" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2822" dy="1855" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -194,9 +194,6 @@
         <mxCell id="P3esFlHFc6xtRCxM-Ww3-59" value="Mass General Hospital" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=15;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
           <mxGeometry x="-170" y="-170" width="220" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="P3esFlHFc6xtRCxM-Ww3-60" value="city" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=15;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="P3esFlHFc6xtRCxM-Ww3-59">
-          <mxGeometry y="30" width="220" height="100" as="geometry" />
-        </mxCell>
         <mxCell id="P3esFlHFc6xtRCxM-Ww3-61" value="1..1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="-180" y="-35" width="40" height="30" as="geometry" />
         </mxCell>
@@ -207,7 +204,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="onl90hW0yhVbBo7K8uGe" name="Page-2">
-    <mxGraphModel dx="2318" dy="2088" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2122" dy="1956" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -323,7 +320,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="WIKZO_O39W_F3QcdNPoz" name="Page-1">
-    <mxGraphModel dx="2440" dy="2170" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="3235" dy="2705" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
