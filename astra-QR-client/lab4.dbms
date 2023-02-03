@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-02-03T04:36:21.401Z" agent="5.0 (Macintosh)" etag="1zxLXLOzalrtE39GA73z" version="20.8.10" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2023-02-03T04:50:02.272Z" agent="5.0 (Macintosh)" etag="GhsasMpPh51DrHT5C8ZB" version="20.8.10" type="github" pages="2">
   <diagram name="Page-1" id="gYWt2X5_X6ixt4JWpfuX">
     <mxGraphModel dx="1854" dy="676" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -148,7 +148,7 @@
         <mxCell id="0aP4K4FA3hGUHhnX7xUN-76" value="Order" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=15;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
           <mxGeometry x="-30" y="300" width="160" height="95" as="geometry" />
         </mxCell>
-        <mxCell id="0aP4K4FA3hGUHhnX7xUN-77" value="identificationType&#xa;orderId    - {PK}&#xa;noOfItems" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=15;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="0aP4K4FA3hGUHhnX7xUN-76">
+        <mxCell id="0aP4K4FA3hGUHhnX7xUN-77" value="identificationType&#xa;orderId    - {PK}&#xa;totalNoOfItems" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=15;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="0aP4K4FA3hGUHhnX7xUN-76">
           <mxGeometry y="30" width="160" height="65" as="geometry" />
         </mxCell>
         <mxCell id="0aP4K4FA3hGUHhnX7xUN-78" value="Credit Card" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=15;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
