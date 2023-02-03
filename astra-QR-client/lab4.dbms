@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-02-03T17:07:03.448Z" agent="5.0 (Macintosh)" etag="e3YBQEhzD4r38XTM8S0p" version="20.8.10" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2023-02-03T17:28:00.260Z" agent="5.0 (Macintosh)" etag="f0aa9ouiVYZbF3iD4UaN" version="20.8.10" type="github" pages="2">
   <diagram name="Page-1" id="gYWt2X5_X6ixt4JWpfuX">
     <mxGraphModel dx="2043" dy="1903" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -231,7 +231,7 @@
         <mxCell id="HttBuU3enJ-bM0_9SV3r-4" value="Pupil" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=15;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
           <mxGeometry x="-210" y="70" width="220" height="170" as="geometry" />
         </mxCell>
-        <mxCell id="HttBuU3enJ-bM0_9SV3r-5" value="identificationNumber  -   {PK}&#xa;firstName&#xa;lastName   sex&#xa;dateOfBirth" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=15;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="HttBuU3enJ-bM0_9SV3r-4">
+        <mxCell id="HttBuU3enJ-bM0_9SV3r-5" value="identificationNumber  -   {PK}&#xa;firstName&#xa;lastName   &#xa;sex&#xa;dateOfBirth" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=15;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="HttBuU3enJ-bM0_9SV3r-4">
           <mxGeometry y="30" width="220" height="140" as="geometry" />
         </mxCell>
         <mxCell id="HttBuU3enJ-bM0_9SV3r-7" value="Teacher" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=15;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
