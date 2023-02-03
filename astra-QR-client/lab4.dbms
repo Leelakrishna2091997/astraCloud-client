@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-02-03T21:13:54.642Z" agent="5.0 (Macintosh)" etag="_CptegumfV18311F6w1c" version="20.8.10" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2023-02-03T21:35:56.611Z" agent="5.0 (Macintosh)" etag="MVi06y9Zj8mrKMFXVUL2" version="20.8.10" type="github" pages="3">
   <diagram name="Page-1" id="gYWt2X5_X6ixt4JWpfuX">
     <mxGraphModel dx="2043" dy="1903" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -427,7 +427,7 @@
         <mxCell id="hisljNpbjp0ecmVYcacs-33" value="Staff" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=15;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
           <mxGeometry x="-720" y="140" width="220" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="hisljNpbjp0ecmVYcacs-34" value="staffId        -     {PK}&#xa;staff_name   &#xa;&#xa;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=15;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="hisljNpbjp0ecmVYcacs-33">
+        <mxCell id="hisljNpbjp0ecmVYcacs-34" value="staffId        -     {PK}&#xa;staff_name   &#xa;staff_type&#xa;&#xa;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=15;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="hisljNpbjp0ecmVYcacs-33">
           <mxGeometry y="30" width="220" height="100" as="geometry" />
         </mxCell>
         <mxCell id="hisljNpbjp0ecmVYcacs-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;fontColor=none;" edge="1" parent="1" source="hisljNpbjp0ecmVYcacs-37" target="hisljNpbjp0ecmVYcacs-34">
