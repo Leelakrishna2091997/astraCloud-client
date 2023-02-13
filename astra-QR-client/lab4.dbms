@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-02-13T20:48:11.670Z" agent="5.0 (Macintosh)" etag="w6idCXe7kfZ3s0jPPwHT" version="20.8.16" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2023-02-13T20:49:18.787Z" agent="5.0 (Macintosh)" etag="4Z-SPKHQgalz_Ypl5BES" version="20.8.16" type="github" pages="4">
   <diagram name="Page-1" id="gYWt2X5_X6ixt4JWpfuX">
     <mxGraphModel dx="1804" dy="1742" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -562,12 +562,6 @@
         </mxCell>
         <mxCell id="GoyjWzg7hU5HK_PDWbNz-2" value="text       &#xa;title   &#xa;articleIdentifier - {PK}&#xa;&#xa;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=15;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="GoyjWzg7hU5HK_PDWbNz-1">
           <mxGeometry y="30" width="220" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="GoyjWzg7hU5HK_PDWbNz-4" value="Chain" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=15;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
-          <mxGeometry x="-350" y="630" width="220" height="200" as="geometry" />
-        </mxCell>
-        <mxCell id="GoyjWzg7hU5HK_PDWbNz-5" value="chain_id        -     {PK}&#xa;openTime    &#xa;closingTime&#xa;Address&#xa;    -streetNumber&#xa;    -streetName&#xa;    -zipCode&#xa;    -stateAbbreviation&#xa;&#xa;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=15;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="GoyjWzg7hU5HK_PDWbNz-4">
-          <mxGeometry y="30" width="220" height="170" as="geometry" />
         </mxCell>
         <mxCell id="GoyjWzg7hU5HK_PDWbNz-6" value="author" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=15;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
           <mxGeometry x="-1130" y="150" width="220" height="110" as="geometry" />
